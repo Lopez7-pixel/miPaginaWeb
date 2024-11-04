@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container-fluid contenedor-principal">
+        <div class="row flex-nowrap">
+
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 fixed-top bg-nav" style="margin-top: 4%;">
+
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Inicio</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0" aria-label="Remeras">
+                                <span class="ms-1 d-none d-sm-inline">Remeras</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0" aria-label="Pantalones">
+                                <span class="ms-1 d-none d-sm-inline">Pantalones</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0" aria-label="Camperas">
+                                <span class="ms-1 d-none d-sm-inline">Camperas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0" aria-label="Buzos">
+                                <span class="ms-1 d-none d-sm-inline">Buzos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0" aria-label="Zapatillas">
+                                <span class="ms-1 d-none d-sm-inline">Zapatillas</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User options">
+                            <img src="https://github.com/mdo.png" alt="Usuario" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">Usuario</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">Comentarios</a></li>
+                            <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                            <li><a class="dropdown-item" href="#">Historial de compras</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="dropdown ">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="Usuario" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">Usuario</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">Comentarios</a></li>
+                            <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                            <li><a class="dropdown-item" href="#">Historial de compras</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navbar -->
+        <nav class="navbar bg-nav fixed-top">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    
+                    <button class="btn btn-outline-primary" type="submit" >
+                        <i class="fas fa-filter"></i>
+                    </button>
+                    <button class="btn btn-outline-primary" type="submit" style="margin-left: 10px;">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                      
+                </form>
+            </div>
+        </nav>
+        
+    
+
+        <div class="container d-flex justify-content-center align-items-center col-10">
+        <div class="card shadow-lg">
+            <div class="card-body text-center">
+                <h2 class="card-title">Remera</h2>
+            </div>
+
+            <img src="https://enfans.com.ar/wp-content/uploads/2021/12/2246010101-REMERA-CORNELL-BLANCO_FRENTE_01_webp.webp" class="card-img-top product-image" alt="Remera básica">
+
+            <div class="card-body">
+                <div class="mb-2">
+                    <label for="talle" class="form-label">Talle</label>
+                    <select class="form-select" id="talle">
+                        <option selected>Selecciona el talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <label for="color" class="form-label">Color</label>
+                    <select class="form-select" id="color">
+                        <option selected>Selecciona el color</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </div>
+
+                <div class="mb-2">
+                    <span class="fw-bold">Precio: </span>
+                    <span class="text-primary">$29.99</span>
+                </div>
+
+                <div class="mb-3">
+                    <span class="fw-bold">Métodos de pago:</span>
+                    <div class="payment-method d-flex justify-content-around mt-2">
+                        <label>
+                            <input type="radio" name="payment" value="visa">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBpCaKcgwOncdimiUVFXDglYAKzh2rY9m8A&s" alt="Visa" width="40">
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="mastercard">
+                            <img src="https://www.sirchandler.com.ar/wp-content/uploads/2014/06/mastercard.jpg" alt="Mastercard" width="40">
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="paypal">
+                            <img src="https://www.contagram.com/blog/wp-content/uploads/2024/05/6151f82178d2b9b9151c157c_R.jpg" alt="PayPal" width="40">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <h5>Reseñas</h5>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label for="comentario" class="form-label">Escribe un comentario:</label>
+                    <textarea class="form-control" id="comentario" rows="2" placeholder="Tu opinión sobre el producto..."></textarea>
+                </div>
+
+                <div class="d-grid">
+                    <button class="btn btn-success" type="button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

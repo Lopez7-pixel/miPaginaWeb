@@ -1,0 +1,61 @@
+.contenedor-principal{
+  background-color: #6B6E70;
+}
+
+.bg-nav{
+  background-color: #1A1A1D ;
+}
+
+.card-button {
+  /* Button styles here */
+  background-color: #0d6efd; /* Example color */
+  border-color: #1A1A1D;
+  color: white; /* Example text color */
+  padding: 10px 20px; /* Example padding */
+  border-radius: 5px; /* Example border radius */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-button:hover {
+  /* Hover effect styles here */
+  background-color:#6B6E70;
+  border-color: #1A1A1D;
+  border-radius: 5px; /* Example border radius */
+}
+
+
+.card {
+  border: #1A1A1D solid 2px;
+}
+
+.card-img-top{
+  border-block-end: #1A1A1D solid 2px;
+}
+
+.carousel-container {
+  width: 100%; /* O un ancho fijo, como 600px */
+  max-width: 600px; /* Ancho máximo */
+  height: 400px; /* Altura fija */
+  overflow: hidden; /* Oculta el desbordamiento */
+  position: relative; /* Posicionamiento relativo */
+  border: #1A1A1D solid 3px;
+  border-radius: 50px;
+  color: #0d6efd;
+}
+
+.carousel-inner {
+  width: 100%; /* Asegura que el inner tenga un ancho fijo */
+  border-radius: black 2px;
+}
+
+.carousel-item {
+  height: 100%; /* Asegura que cada item ocupe la altura completa */
+  
+}
+
+.carousel-inner img {
+  width: 100%; /* Llenar el ancho del contenedor */
+  height: 100%; /* Ajustar a la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción sin deformar */
+  display: block; /* Evita espacio extra */
+}

@@ -1,0 +1,79 @@
+.contenedor-principal{
+    background-color: #6B6E70;
+  }
+  
+  .bg-nav{
+    background-color: #1A1A1D ;
+  }  
+
+.container {
+    min-height: 100vh;
+}
+.card {
+    max-width: 500px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.product-image {
+    object-fit: contain;
+    height: 120px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 1.5rem;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.stars input:checked ~ label {
+    color: gold;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+.payment-method img {
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.payment-method img.selected {
+    opacity: 1;
+}
+
+.payment-method input[type="radio"] {
+    display: none;
+}
+
+.payment-method input[type="radio"]:checked + img {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 100%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
