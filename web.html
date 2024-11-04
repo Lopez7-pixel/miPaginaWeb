@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Página de tienda de ropa</title>
+</head>
+<body class="contenedor-principal">
+    <div class="container-fluid">
+        
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 fixed-top bg-nav" style="margin-top: 4%;">
+
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/"  aria-label="start" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Inicio</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#"  aria-label="nav-item" class="nav-link align-middle px-0" aria-label="Remeras">
+                            <span class="ms-1 d-none d-sm-inline">Remeras</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="nav-item" class="nav-link align-middle px-0" aria-label="Pantalones">
+                            <span class="ms-1 d-none d-sm-inline">Pantalones</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="nav-item" class="nav-link align-middle px-0" aria-label="Camperas">
+                            <span class="ms-1 d-none d-sm-inline">Camperas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="nav-item" class="nav-link align-middle px-0" aria-label="Buzos">
+                            <span class="ms-1 d-none d-sm-inline">Buzos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" aria-label="nav-item" class="nav-link align-middle px-0" aria-label="Zapatillas">
+                            <span class="ms-1 d-none d-sm-inline">Zapatillas</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" aria-label="nav-item" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="User options">
+                        <img src="https://github.com/mdo.png" alt="Usuario" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Usuario</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">Comentarios</a></li>
+                        <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                        <li><a class="dropdown-item" href="#">Historial de compras</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <a href="#" aria-label="nav-item" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="Usuario" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Usuario</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a aria-label="nav-item" class="dropdown-item" href="#">Comentarios</a></li>
+                        <li><a aria-label="nav-item" class="dropdown-item" href="#">Ayuda</a></li>
+                        <li><a aria-label="nav-item"  class="dropdown-item" href="#">Historial de compras</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a aria-label="nav-item" class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar bg-nav fixed-top">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    
+                    <button class="btn btn-outline-primary" type="submit" aria-label="Button of filter" >
+                        <i class="fas fa-filter"></i>
+                    </button>
+                    <button class="btn btn-outline-primary" type="submit" style="margin-left: 10px;" aria-label="Button of shopping-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                      
+                </form>
+            </div>
+        </nav>
+
+        <div class="content" style="margin-left: 220px; margin-top: 70px;">
+            
+            
+            <br />
+            
+            <!-- Carousel -->
+            <div class="d-flex justify-content-center py-3">
+                <div class="carousel-container col-10">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?w=400&auto=format&fit=crop&q=60" class="d-block w-100" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4> Blusa </h4>
+                                    <p > <h5> $100 </h5> </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1512201078372-9c6b2a0d528a?w=400&auto=format&fit=crop&q=60" class="d-block w-100" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4> Cartera </h4>
+                                    <p> <h5> $35 </h5> </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=400&auto=format&fit=crop&q=60" class="d-block w-100" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4> Colgantes </h4>
+                                    <p> <h5> $15 </h5> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center mt-2">
+                    
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1714426533654-46477740de7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDl8alRrV25sUlpnb1F8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Oriental con facha</h5>
+                        <p class="card-text"></p>
+                        <a href="index2.html" aria-label="shop item" class="card-button btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1697661086713-1f196d82891e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTcxfGpUa1dubFJaZ29RfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Afrodescendiente</h5>
+                        <p class="card-text"> </p>
+                        <a href="index2.html"  aria-label="shop item" class="card-button btn btn-secondary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1658294600218-d5b74d734928?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTg1fGpUa1dubFJaZ29RfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Mujer china</h5>
+                        <p class="card-text"></p>
+                        <a href="index2.html"  aria-label="shop item" class="card-button btn btn-success">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
